@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itcloser Project A</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav{
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover{
+            color: #ffcc00;
+            transform: translateX(-2px);
+        }
+        nav h1{
+            color: white;
+        }
+        .btn{
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea{
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        .projects-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project{
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+        }
+        header{
+            text-align: center;
+            padding: 80px;
+            background: #f4f4f4;
+        }
+        h2{
+            text-align: center;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        #about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #contact p{
+            text-align: center;
+        }
+        section{
+            padding: 40px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ITCLOSER</h1>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Hi, I`m Fathiu</h1>
+        <p>Full stack developer</p>
+        <a href="#project" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am learning web development and building responsive websites using HTML and CSS.</p>
+        </section>
+
+        <section id="project">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+                <div class="project">
+                    <h3>School Website</h3>
+                    <p>A simple school page.</p>
+                </div>
+                <div class="project">
+                    <h3>Company Dashboard</h3>
+                    <p>Dashboard using HTML & CSS.</p>
+                </div>
+                <div class="project">
+                    <h3>Registration Form</h3>
+                    <p>User form design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your message"></textarea>
+                <button type="submit">Send message</button>
+            </form>
+
+            <p>Email:<a href="#">itcloserfsdds6840@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ITCLOSER Full Stack Development Squad (6840).</p>
+    </footer>
+</body>
+</html>
